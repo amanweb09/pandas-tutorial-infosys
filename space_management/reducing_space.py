@@ -17,6 +17,11 @@ Here we do it with continents
 """
 category datatype auto creates a table and stores the categories as int
 """
+
+# step 1 is to check how many unique values we have
+print(drinks.continents.unique())
+
+# convert to category dtype
 drinks.continent = drinks.continent.astype("category")
 
 # checking the int codes of each category
