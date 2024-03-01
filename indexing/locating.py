@@ -22,6 +22,9 @@ z = data.loc[:, :]
 genres = data.loc[:, "genre"]
 print(genres)
 
+# ques: select all rows where genre is not action
+not_action = data.loc[data.genre != "action", :]
+
 # ques: select all rows of genre and title
 g_t = data.loc[:, ["genre", "title"]]
 print(g_t)
